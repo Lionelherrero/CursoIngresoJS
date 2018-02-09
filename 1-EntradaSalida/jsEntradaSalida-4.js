@@ -4,6 +4,9 @@
 */
 function Mostar()
 {
-	
+	var nombre;
+	nombre= prompt("ingresa tu nombre");
+	document.getElementById('elNombre').value= nombre;
+	//toma el nombre y el valor del nombre lo muestra en el cuadro de texto
 }
 
