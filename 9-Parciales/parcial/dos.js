@@ -6,9 +6,9 @@ function Mostrar()
   importeUsuario=prompt('Ingrese el importe:');
 
 //Recordar utilizar parseInt() para pasar el literal a número!!!!
-  parseInt(importeUsuario);
+  importeUsuario=parseInt(importeUsuario);
 
-  importeFinal=parseInt(importeUsuario)+(parseInt(importeUsuario)*0.21);
+  importeFinal=importeUsuario+(importeUsuario*0.21);
 
     document.getElementById('importeFinal').value=importeFinal;
 
