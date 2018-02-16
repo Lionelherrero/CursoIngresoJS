@@ -21,4 +21,22 @@ function Mostrar()
 		}
 	}
 
+	/*
+
+	if(numeroRandom>8)
+	{
+		alert("ex "+numeroRandom);
+	}
+	else
+	{
+		id(numeroRandom>3)
+		{
+			alert();
+		}
+		else
+		{
+			alert();
+		}
+	}
+
 }//FIN DE LA FUNCIÓN
