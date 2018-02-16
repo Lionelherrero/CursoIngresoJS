@@ -13,7 +13,7 @@ function Mostrar()
 	if (numeroUno == numeroDos)
 	{
 		resultado= numeroUno * numeroDos;
-		document.write(resultado);
+		//document.write(resultado);
 
 	}
 	else
@@ -21,13 +21,15 @@ function Mostrar()
 		if (numeroUno > numeroDos)
 		{
 			resultado= numeroUno - numeroDos;
-			document.write(resultado);
+			//document.write(resultado);
 		}
 		else
 		{
 			resultado= numeroUno + numeroDos;
-			document.write(resultado);
+			//document.write(resultado);
 		}
 
 	}
+
+	document.write(resultado);
 }
