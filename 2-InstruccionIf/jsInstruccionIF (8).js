@@ -11,7 +11,7 @@ function Mostrar()
 
 	if (edad>17 && estadoCivil == "Soltero")
 	{
-		alert("Es soltero y no es menor.")
+		alert("Es soltero y no es menor.");
 	}
 
 
