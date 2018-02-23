@@ -1,16 +1,18 @@
 function Mostrar()
 {
-	//alert('iteración while');
 	var contador;
-	contador=0;
-	while(contador<10)
+
+	//Empiezo el contador en 0 (ascendente del 1 al 10)
+	contador=0
+
+	//Escribo la iteración
+	while (contador<10) //Se ejecuta hasta que el contador = 10
 	{
-		contador=contador+1;
-		document.write("<br> "+contador);
-		
+		contador=contador+1; //le agrego 1 al contador cada vez que se ejecute el código
+		document.write("<br> "+contador); //!! escribo después, no quiero que
+										  //salga el 0.
 	}
 
-	//cuanto vale el contador
-	document.write("<br>sali "+contador);
+
 
 }//FIN DE LA FUNCIÓN
