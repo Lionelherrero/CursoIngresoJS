@@ -1,29 +1,15 @@
 function Mostrar()
 {
 
-	var sexo = prompt("ingrese f ó m .");
+	var sexo = prompt("Ingrese f ó m .");
 
-	
-	// while (sexo != "f" || sexo != "m") loop infinito, siempre se cumpliría la condición. Alguno de los dos siempre va a ser distinto
-	while ( sexo != "f" && sexo != "m")
+	while (sexo != "f" && sexo != "m") //Tiene que ser distinto de f y m a la vez.
 	{
-		alert("Error. Ingrese f o m.");
-
-		sexo = prompt("ingrese f ó m .");
+		alert("Error. Debe ingresar f o m.");
+		sexo = prompt("Ingrese f ó m .");
 	}
 
-	/*
-	if(sexo=="f")
-	{
-		document.getElementById('Sexo').value="femenino";
-	}
-	else
-	{
-		document.getElementById('Sexo').value="masculino";
-	}
-	*/
-
-	if(sexo=="f")
+	if (sexo == "f")
 	{
 		sexo="femenino";
 	}
@@ -32,7 +18,6 @@ function Mostrar()
 		sexo="masculino";
 	}
 
-	document.getElementById('Sexo').value="su sexo es: "+sexo;
-		
+	document.getElementById('Sexo').value=sexo;
 
 }//FIN DE LA FUNCIÓN
