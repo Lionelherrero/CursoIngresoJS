@@ -3,7 +3,7 @@ function Mostrar()
 
 	var contador=0;
 	var positivo=0;
-	var negativo=1;
+	var negativo=1; //si multiplico * 0 = 0
 	var numero;
 	
 	var respuesta='si';
@@ -13,17 +13,21 @@ function Mostrar()
 		numero=prompt("ingrese un número");
 		numero=parseInt(numero);
 
-		contador=contador+1;
+		while (isNaN(numero))
+		{
+			numero=prompt("ingrese un número");
+			numero=parseInt(numero);
+		}
 
 		if (numero > 0)
 		{
-			positivo=positivo+numero;
+			positivo=positivo+numero; //positivo+=numero;
 		}
 		else
 		{
-			if (numero < 1)
+			if (numero < 0)
 			{
-			 negativo=negativo*numero;
+			 negativo=negativo*numero; //negativo*=numero
 			}			
 		}
 
