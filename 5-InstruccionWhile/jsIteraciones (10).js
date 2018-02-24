@@ -45,14 +45,14 @@ function Mostrar()
 				positivos=positivos+numero;
 				contadorPositivos++;
 			}
+			else //(numero == 0)
+			{
+				contadorCeros++;
+			}
 		}
 		
-		if (numero == 0)
-		{
-			contadorCeros++;
-		}
-
-		if ((numero%2)==0)
+		
+		if ((numero%2)==0 && numero!=0) // 0 no es par
 		{
 			contadorNumerosPares++;
 		}
@@ -62,7 +62,7 @@ function Mostrar()
 
 	promedioPositivos=positivos/contadorPositivos;
 	promedioNegativos=negativos/contadorNegativos;
-	diferenciaPositivosNegativos=positivos-negativos;
+	diferenciaPositivosNegativos=positivos-negativos; //Si es - * - = +
 
 	document.write("<br>"+"La suma de los números positivos es: "+positivos);
 	document.write("<br>"+"La suma de los números positivos es: "+negativos);
