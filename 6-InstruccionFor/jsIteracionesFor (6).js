@@ -1,19 +1,23 @@
 function Mostrar()
 {
-	var numero;
-	var contadorNumeros;
-	var cantidadPares;
+	var numeroIngresado;
+	var cantidadNumerosPares=0;
 
-	for (i=1; i>0; i++)
+	numeroIngresado=prompt("Ingrese un número");
+	numeroIngresado=parseInt(numeroIngresado);
+
+	for (i=1; i <= numeroIngresado; i++)
 	{
-		numero=prompt("Escriba un número");
-		numero=parseInt(numero);
-
-		if (true)
+		//para saber si es par, i dividido 2
+		// tiene que ser = 0
+		if (i%2 == 0) 
 		{
-
+			document.write("<br>"+i);
+			cantidadNumerosPares++;
 		}
 	}
+
+	document.write("<br>La cantidad de números pares es: "+cantidadNumerosPares);
 
 
 
