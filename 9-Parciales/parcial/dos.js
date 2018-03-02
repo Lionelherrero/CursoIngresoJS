@@ -8,7 +8,7 @@ function Mostrar()
 //Recordar utilizar parseInt() para pasar el literal a número!!!!
   importeUsuario=parseInt(importeUsuario);
 
-  importeFinal=importeUsuario+(importeUsuario*0.21);
+  importeFinal=parseInt(importeUsuario)+(parseInt(importeUsuario)*0.21);
 
     document.getElementById('importeFinal').value=importeFinal;
 

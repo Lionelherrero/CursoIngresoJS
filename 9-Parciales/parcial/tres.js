@@ -3,7 +3,7 @@ function Mostrar()
 	var largo;
 	var ancho;
 	var perímetro;
-	var hilosAlambrado;
+	var resultado;
 
 	largo=document.getElementById('alrgo').value;
 	ancho=document.getElementById('ancho').value;
@@ -11,11 +11,11 @@ function Mostrar()
 	largo=parseInt(largo);
 	ancho=parseInt(ancho);
 
-	perímetro= (2*largo) + (2*ancho);
+	perímetro=(2*largo)+(2*ancho);
 
-	hilosAlambrado=parseInt(perímetro/3);
+	resultado=perímetro*3;
+	resultado=parseInt(resultado);
 
-
-	alert("Se necesitan 3 hilos de: "+hilosAlambrado+" metros");
+	alert("Se necesita un hilo de: "+resultado+" metros.");
 
 }
