@@ -2,18 +2,18 @@
 function Mostrar()
 {
 	var numeroPositivo;
-	var respuesta="sí";
+	var respuesta;
 
-	var contadorNumerosPares;
+	var contadorNumerosPares=0;
 
-	var acumuladorNumeros=0;
 	var contadorNumerosIngresados=0;
-	var promedioNumerosIngresados=0;
+	var acumuladorNumerosIngresados=0;
+	var promedioNumerosIngresados;
 
 	var numeroMaximo;
 	var numeroMinimo;
 
-	while (respuesta == "salir")
+	while (respuesta != 'salir')
 	{
 		numeroPositivo=prompt("Ingrese un número positivo:");
 		numeroPositivo=parseInt(numeroPositivo);
@@ -26,14 +26,12 @@ function Mostrar()
 		}
 
 		contadorNumerosIngresados++;
-		acumuladorNumeros=acumuladorNumeros+numeroPositivo;
+		acumuladorNumerosIngresados=acumuladorNumerosIngresados+numeroPositivo;
 
 		if (numeroPositivo%2 == 0)
 		{
 			contadorNumerosPares++;
 		}
-
-		respuesta=prompt("Si desea salir escriba 'salir':");
 
 		if (contadorNumerosIngresados == 1)
 		{
@@ -42,7 +40,7 @@ function Mostrar()
 		}
 		else
 		{
-			if (numeroPositivo>numeroMaximo)
+			if (numeroPositivo > numeroMaximo)
 			{
 				numeroMaximo=numeroPositivo;
 			}
@@ -53,16 +51,21 @@ function Mostrar()
 					numeroMinimo=numeroPositivo;
 				}
 			}
+
 		}
 
+		respuesta=prompt("Si terminó de ingresar los números escriba 'salir'.");
 	}
 
-	
-	promedioNumerosIngresados=acumuladorNumeros/contadorNumerosIngresados;
+	promedioNumerosIngresados=acumuladorNumerosIngresados/contadorNumerosIngresados;
 
-	document.write("La cantidad de numeros pares es: "+contadorNumerosPares);
-	document.write("<br>El promedio de los numeros ingresados es: "+promedioNumerosIngresados);
-	document.write("<br>La suma de todos los numeros es: "+acumuladorNumeros);
+
+	document.write("Cantidad de números pares ingresados: "+contadorNumerosPares);
+	document.write("<br>Promedio de todos los números ingresados: "+promedioNumerosIngresados);
+	document.write("<br>Suma de todos los números: "+acumuladorNumerosIngresados);
+	document.write("<br>El número máximo es: "+numeroMaximo);
+	document.write("<br>El número mínimo es: "+numeroMinimo);
+
 
 	
 }
